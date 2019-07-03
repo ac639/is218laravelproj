@@ -26,8 +26,8 @@ Route::get('/why-learana', function () {
     return view('pages.meet-learana');
 });
 
-Route::get('/discover-online-courses', function () {
-    return view('pages.discover');
+Route::get('/about', function () {
+    return view('pages.about');
 });
 Route::get('/login', function () {
     return view('pages.login');
