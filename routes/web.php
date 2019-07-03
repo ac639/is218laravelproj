@@ -12,5 +12,34 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
+});
+Route::get('/meet-learana', function () {
+    return view('pages.why');
+});
+
+Route::get('/connect', function () {
+    return view('pages.connect');
+});
+
+Route::get('/why-learana', function () {
+    return view('pages.meet-learana');
+});
+
+Route::get('/discover-online-courses', function () {
+    return view('pages.discover');
+});
+Route::get('/login', function () {
+    return view('pages.login');
+});
+Route::get('/get-started', function () {
+    return view('pages.signup');
+});
+
+Route::get('/profile', function () {
+    return view('pages.profile');
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
