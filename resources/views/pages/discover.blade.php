@@ -1,54 +1,121 @@
-@extends('layouts.landing')
+@extends('layouts.content')
 @section('content')
-    <div class="row ml-auto mr-auto bgDark">
-        <div class="container justify-content-center ">
-            <h1 class="text-center text-white">Share your experience with others.</h1>
-            <p class="text-center text-white">Achieve your goals</p>
-            <div class="card-deck">
-                <div class="card mb-3 pb-3">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-block pl-3 pr-3">
-                        <h4 class="card-title">Solo</h4>
-                        <p class="card-text">Solo are self paced courses that consist of currated resources and instructions that save you time searching for what to learn about a subject.</p>
-                    </div>
-                </div>
-                <div class="card shadow mb-3  pb-3">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-block pl-3 pr-3">
-                        <h4 class="card-title">One on One</h4>
-                        <p class="card-text">Is for 1-1 interactions through webconferencing, in person meetings, and online chat.(Slack and FacebooK)</p>
-                    </div>
-                </div>
-                <div class="card mb-3 pb-3 ">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-block pl-3 pr-3">
-                        <h4 class="card-title">Small Group Courses</h4>
-                        <p class="card-text">Is for a  group interactions through webconferencing, in person meetings, and online chat.(Slack and FacebooK)</p>
-                    </div>
-                </div>
-                <div class="card mb-3 pb-3 ">
-                    <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-                    <div class="card-block pl-3 pr-3">
-                        <h4 class="card-title">Webinars</h4>
-                        <p class="card-text">Lare groups that meet through web conferencing and online chat (Slack and FacebooK)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-x
 
 
+    <!-- Page Content -->
     <div class="container">
+
         <div class="row">
 
-            <button type="button" class="btn btn-primary">Request a Course</button>
-            <button type="button" class="btn btn-secondary">Create a Course</button>
-            <button type="button" class="btn btn-success">Register for Course</button>
-        </div>
-        <div class="row">
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
 
+                <!-- Title -->
+                <h1 class="mt-4">Home Page</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by
+                    <a href="#">Andre Catarino</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p>Posted on 07/2/19</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="https://www.bsr.org/images/sized/images/heroes/2018-04-16-future-of-internet-power-case-study-hero-900x300.jpg" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                    </footer>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+                <hr>
+
+                <!-- Comments Form -->
+                <div class="card my-4">
+                    <h5 class="card-header">Leave a Comment:</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Single Comment -->
+                <div class="media mb-4">
+                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                    <div class="media-body">
+                        <h5 class="mt-0">Commenter Name</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+
+                <!-- Comment with nested comments -->
+                <div class="media mb-4">
+                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                    <div class="media-body">
+                        <h5 class="mt-0">Commenter Name</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                        <div class="media mt-4">
+                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0">Commenter Name</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+
+                        <div class="media mt-4">
+                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                            <div class="media-body">
+                                <h5 class="mt-0">Commenter Name</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar Widgets Column -->
             <div class="col-md-4">
+
+                <!-- Search Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Categories Widget -->
                 <div class="card my-4">
@@ -85,45 +152,19 @@ x
                     </div>
                 </div>
 
-            </div>
-
-            <!-- Post Content Column -->
-            <div class="col-md-8">
-
-                <!-- Title -->
-                <h1 class="mt-4">Recently Added Experiences</h1>
-
-                <!-- Author -->
-                <p class="lead">
-                   Get started today!
-                </p>
-
-                <hr>
-
-                <!-- Single Comment -->
-                <div class="media mb-4">
-                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                    <div class="media-body">
-                        <h5 class="mt-0">Experience Name</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <!-- Side Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Side Widget</h5>
+                    <div class="card-body">
+                        You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
                     </div>
                 </div>
-                <!-- Single Comment -->
-                <div class="media mb-4">
-                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                    <div class="media-body">
-                        <h5 class="mt-0">Experience Name</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </div>
-                <hr>
+
             </div>
-
-            <!-- Sidebar Widgets Column -->
-
-            <!-- /.row -->
 
         </div>
+        <!-- /.row -->
 
-
+    </div>
+    <!-- /.container -->
 @stop
